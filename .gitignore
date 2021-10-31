@@ -1,0 +1,6 @@
+# Envrionment
+.env
+venv-dataserve
+
+# Code
+**/__pycache__/

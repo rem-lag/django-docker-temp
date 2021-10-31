@@ -1,0 +1,10 @@
+django==3.2.8
+djangorestframework==3.12.4
+dj-database-url
+django-redis-cache
+django-rq
+django-debug-toolbar
+django_heroku
+whitenoise
+gunicorn
+psycopg2
