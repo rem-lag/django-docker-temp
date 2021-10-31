@@ -6,7 +6,9 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     env_file: .env
     volumes:
-      - .:/app
+      - ./dataserve:/app/dataserve
+      - ./handler:/app/handler
+      - ./staticfiles:/app/staticfiles
     ports:
       - 8000:8000
     depends_on:
@@ -18,7 +20,9 @@ services:
     command: python manage.py rqworker default
     env_file: .env
     volumes:
-      - .:/app
+      - ./dataserve:/app/dataserve
+      - ./handler:/app/handler
+      - ./staticfiles:/app/staticfiles
     depends_on:
       - web
 
